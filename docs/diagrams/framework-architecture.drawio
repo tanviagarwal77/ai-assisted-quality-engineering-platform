@@ -1,0 +1,26 @@
+                Business Requirements
+                         │
+                         ▼
+                 AI Requirement Analyzer
+                         │
+                         ▼
+                  Test Case Generator
+                         │
+                         ▼
+                 Automation Framework
+                 ┌────────┴────────┐
+                 ▼                 ▼
+             UI Tests         API Tests
+                 │                 │
+                 └────────┬────────┘
+                          ▼
+                   Test Execution
+                          │
+                          ▼
+                 AI Failure Analysis
+                          │
+                          ▼
+                  Bug Report Generator
+                          │
+                          ▼
+                  Release Dashboard
