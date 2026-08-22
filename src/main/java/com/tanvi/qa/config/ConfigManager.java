@@ -179,6 +179,9 @@ private static Properties loadEnvironmentProperties() {
 
     return Long.parseLong(get("script.timeout")
     );
-}
+  }
+    public static String getAutBaseUrl() {
+    return get("aut.base.url");
+   }
     
 }
