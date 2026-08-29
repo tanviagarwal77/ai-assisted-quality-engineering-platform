@@ -183,5 +183,8 @@ private static Properties loadEnvironmentProperties() {
     public static String getAutBaseUrl() {
     return get("aut.base.url");
    }
+   public static String getTestApiBaseUrl() {
+    return get("test.api.base.url");
+}
     
 }

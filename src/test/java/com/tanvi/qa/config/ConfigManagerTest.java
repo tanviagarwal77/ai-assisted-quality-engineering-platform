@@ -148,4 +148,13 @@ public void shouldLoadAutBaseUrlFromConfiguration() {
             "AUT base URL should be loaded from configuration"
     );
 }
+@Test
+public void shouldLoadTestApiBaseUrl() {
+
+    Assert.assertEquals(
+            ConfigManager.getTestApiBaseUrl(),
+            "https://jsonplaceholder.typicode.com",
+            "Test API base URL should be loaded from configuration"
+    );
+}
 }
