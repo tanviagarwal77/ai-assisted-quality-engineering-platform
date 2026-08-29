@@ -12,11 +12,8 @@ public class WaitManagerTest extends BaseTest {
 
         getDriver().get("https://example.com");
 
-        WaitManager waitManager =
-                new WaitManager(getDriver());
-
         Assert.assertNotNull(
-                waitManager.waitForVisible(
+                getWaitManager().waitForVisible(
                         By.tagName("h1")
                 ),
                 "Heading should become visible"
@@ -28,11 +25,10 @@ public class WaitManagerTest extends BaseTest {
 
         getDriver().get("https://example.com");
 
-        WaitManager waitManager =
-                new WaitManager(getDriver());
-
         Assert.assertTrue(
-                waitManager.waitForTitle("Example Domain"),
+                getWaitManager().waitForTitle(
+                        "Example Domain"
+                ),
                 "Expected page title should be present"
         );
     }
