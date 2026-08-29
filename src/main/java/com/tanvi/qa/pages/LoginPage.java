@@ -26,6 +26,7 @@ public class LoginPage  extends BasePage{
     super(driver, waitManager);
 }
 
+
     public LoginPage enterUsername(String username) {
 
         waitManager
@@ -65,4 +66,10 @@ public class LoginPage  extends BasePage{
                 .waitForVisible(errorMessage)
                 .getText();
     }
+    public boolean isErrorDisplayed() {
+
+    return waitManager
+            .waitForVisible(errorMessage)
+            .isDisplayed();
+}
 }
